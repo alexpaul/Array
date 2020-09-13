@@ -1,5 +1,15 @@
 # Array
 
+## Array Initialization 
+
+```swift 
+let genericArraySyntax: Array<String> = ["Alex", "John", "Steve", "Wozniak"]
+let arrayLiteral = [1, 2, 3, 4, 5]
+var emptyArray = [Int]()
+
+var bucketsArray = Array(repeating: [Int](), count: 4)
+```
+
 ## Partition 
 
 ```swift 

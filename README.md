@@ -10,6 +10,28 @@ var emptyArray = [Int]()
 var bucketsArray = Array(repeating: [Int](), count: 4)
 ```
 
+## Heterogeneous Array 
+
+```swift 
+let arr: [Any] = [1, 2, 3.3, 4.3, 5.3, 6.3, "7.0"] // Heterogeneous collection must have an explicit type [Any]
+
+for element in arr {
+  if let char = element as? Character {
+    print("\(char) is a Character")
+  }
+  if let int = element as? Int {
+    print("\(int) is an Int")
+  }
+  if let double = element as? Double {
+    print("\(double) is a Double")
+  }
+  if let string = element as? String,
+     let stringValue = Double(string) {
+    print("\(stringValue) is a Double")
+  }
+}
+```
+
 ## Partition 
 
 ```swift 

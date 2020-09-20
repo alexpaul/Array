@@ -192,3 +192,12 @@ for i in 0..<ticTacToe.count {
 </br>
 
 
+### Challenges 
+
+#### Challenge 1
+
+[HackerRank - Reverse Array](https://www.hackerrank.com/challenges/arrays-ds/problem)
+
+#### Challenge 2 
+
+

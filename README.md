@@ -25,7 +25,7 @@ Perform the following operations:
 #### Print the rows of the tic tac toe board
 
 <details> 
-  <summary>Solution</sumary> 
+  <summary>Solution</summary> 
 
 ```swift 
 for row in 0..<ticTacToe.count {
@@ -44,7 +44,7 @@ for row in 0..<ticTacToe.count {
 #### Print all the individual values of the tic tac toe board
 
 <details> 
-  <summary>Solution</sumary> 
+  <summary>Solution</summary> 
 
 ```swift 
 for row in 0..<ticTacToe.count {
@@ -74,7 +74,7 @@ for row in 0..<ticTacToe.count {
 ```
 
 <details> 
-  <summary>Solution</sumary> 
+  <summary>Solution</summary> 
 
 ```swift 
 var colIndex = 0
@@ -123,7 +123,7 @@ for col in colIndex..<ticTacToe.count { // 0, 1, 2
 ```
 
 <details> 
-  <summary>Solution</sumary> 
+  <summary>Solution</summary> 
 
 ```swift 
 // [0,0]  [1,1]  [2,2] - leftTop -> rightBottom

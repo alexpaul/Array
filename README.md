@@ -8,6 +8,7 @@ let arrayLiteral = [1, 2, 3, 4, 5]
 var emptyArray = [Int]()
 
 var bucketsArray = Array(repeating: [Int](), count: 4)
+print(bucketsArray) // [[], [], [], []]
 ```
 
 ## Heterogeneous Array 

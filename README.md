@@ -33,6 +33,24 @@ for element in arr {
 }
 ```
 
+## Stride 
+
+```swift 
+let names = ["Beth", "Josh", "Nancy", "Quincy", "Mary"]
+
+for index in stride(from: 0, through: names.count - 1, by: 1) {
+  print(names[index])
+}
+
+/*
+ Beth
+ Josh
+ Nancy
+ Quincy
+ Mary
+*/
+```
+
 ## Partition 
 
 ```swift 

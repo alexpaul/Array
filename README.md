@@ -218,4 +218,6 @@ for i in 0..<ticTacToe.count {
 
 #### Challenge 2 
 
+[HackerRank - Hour Glass](https://www.hackerrank.com/challenges/2d-array/problem)
+
 

@@ -81,6 +81,8 @@ for row in 0..<ticTacToe.count {
 
 </details> 
 
+</br>
+
 #### Print all the individual values of the tic tac toe board
 
 <details> 
@@ -96,6 +98,8 @@ for row in 0..<ticTacToe.count {
 ```
 
 </details> 
+
+</br>
 
 #### Print the columns of the tic tac toe board
 
@@ -142,6 +146,8 @@ for col in colIndex..<ticTacToe.count { // 0, 1, 2
 
 </details> 
 
+</br>
+
 #### Print the diagonals of the tic tac toe board
 
 ```swift 
@@ -181,4 +187,7 @@ for i in 0..<ticTacToe.count {
 ```
 
 </details> 
+
+</br>
+
 

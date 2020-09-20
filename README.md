@@ -69,7 +69,7 @@ print(ages10AndLess) // [7, 1, 10, 2, 4, 2]
 print(agesOlderThan10) // [23, 90, 34, 34]
 ```
 
-## 2D Array Case Study 
+## (2D Array, matrix or grid) Case Study 
 
 Given the following Tic Tac Toe board below.  
 

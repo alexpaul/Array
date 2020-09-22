@@ -338,5 +338,6 @@ Constraints: do the problem below withou using built-in `reverse()`
 ## Resources 
 
 1. [Apple documentation - Array](https://developer.apple.com/documentation/swift/array)
+2. [LeetCode - Array](https://leetcode.com/tag/array/)
 
 

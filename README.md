@@ -342,6 +342,7 @@ Constraints: do the problem below withou using built-in `reverse()`
 ## Resources 
 
 1. [Apple documentation - Array](https://developer.apple.com/documentation/swift/array)
-2. [LeetCode - Array](https://leetcode.com/tag/array/)
+2. [Swift Programming Language - Collection Types](https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html)
+3. [LeetCode - Array](https://leetcode.com/tag/array/)
 
 

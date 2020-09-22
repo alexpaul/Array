@@ -55,11 +55,31 @@ if let index = names.firstIndex(of: "Bob") { // O(n) runtime operation
 }
 ```
 
-#### `contains`
+#### `contains()`
 
 ```swift 
 if names.contains("John") {
   print("Hi John Appleseed.") // Hi John Appleseed.
+}
+```
+
+#### `min()`
+
+```swift 
+let numbers = [-5, 1, 6, 0, 12, -9, 23, 9]
+
+if let minNumber = numbers.min() {
+  print("min number is \(minNumber)") // min number is -9
+}
+```
+
+#### `max()`
+
+```swift 
+let numbers = [-5, 1, 6, 0, 12, -9, 23, 9]
+
+if let maxNumber = numbers.max() {
+  print("max number is \(maxNumber)") // max number is 23
 }
 ```
 
@@ -91,6 +111,28 @@ if let last = fruits.last {
 if let randomFruit = fruits.randomElement() {
   print("Randomly picking \(randomFruit)") // Randomly picking banana
 }
+```
+
+## Selecting Elements 
+
+#### `prefix(Int)`
+
+```swift 
+let cohorts = [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0]
+
+let firstThreeCorts = cohorts.prefix(3)
+
+print(firstThreeCorts) // [1.0, 2.0, 3.0]
+```
+
+#### `suffix(Int)`
+
+```swift 
+let cohorts = [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0]
+
+let cohortStarted = cohorts.suffix(4)
+
+print(cohortStarted) // [4.0, 5.0, 6.0, 7.0]
 ```
 
 

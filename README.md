@@ -335,6 +335,10 @@ Constraints: do the problem below withou using built-in `reverse()`
 
 [HackerRank - Hour Glass](https://www.hackerrank.com/challenges/2d-array/problem)
 
+#### Challenge 3 
+
+[LeetCode - Valid Tic Tac Toe State](https://leetcode.com/problems/valid-tic-tac-toe-state/)
+
 ## Resources 
 
 1. [Apple documentation - Array](https://developer.apple.com/documentation/swift/array)

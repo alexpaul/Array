@@ -11,6 +11,89 @@ var bucketsArray = Array(repeating: [Int](), count: 4)
 print(bucketsArray) // [[], [], [], []]
 ```
 
+## Adding and Removing 
+
+```swift 
+var jobsApplied = ["Apple", "Peloton", "Google", "Box", "Zoom", "Bloomberg"]
+
+var companiesToApply = ["Houzz", "ZocDoc", "Stockpile"]
+```
+
+#### Insert  
+```swift 
+jobsApplied.insert("Zwift", at: 1) // ["Apple", "Zwift", "Peloton", "Google", "Box", "Zoom", "Bloomberg"]
+```
+
+#### Append 
+
+We can `append` a single element or we can append a sequence e.g `companiesToApply`
+
+```swift 
+jobsApplied.append(contentsOf: companiesToApply) // ["Apple", "Zwift", "Peloton", "Google", "Box", "Zoom", "Bloomberg", "Houzz", "ZocDoc", "Stockpile"]
+```
+
+#### Remove
+
+```swift 
+jobsApplied.removeLast() // removes the last element - THIS WILL CRASH IF THE ARRAY IS EMPTY - PROCEED WITH CAUTION
+```
+
+```swift 
+jobsApplied.popLast() // safer as it returns an optional so will safely work on an empty array
+```
+
+
+## Search 
+
+#### `firstIndex(of:_)`
+
+```swift 
+let names = ["Bob", "Sally", "John", "Heather"]
+
+if let index = names.firstIndex(of: "Bob") { // O(n) runtime operation
+  print("found name at index \(index)") // found name at index 0
+}
+```
+
+#### `contains`
+
+```swift 
+if names.contains("John") {
+  print("Hi John Appleseed.") // Hi John Appleseed.
+}
+```
+
+## Accessing Elements 
+
+```swift 
+let fruits = ["apple", "banana", "oranges", "kiwi"]
+```
+
+#### `first` element 
+
+```swift 
+if let first = fruits.first {
+  print("The first fruit is \(first)") // The first fruit is apple
+}
+```
+
+#### `last` element 
+
+```swift 
+if let last = fruits.last {
+  print("The last fruit is \(last)") // The last fruit is kiwi
+}
+```
+
+#### `randomElement`
+
+```swift 
+if let randomFruit = fruits.randomElement() {
+  print("Randomly picking \(randomFruit)") // Randomly picking banana
+}
+```
+
+
 ## Heterogeneous Array 
 
 ```swift 
@@ -51,7 +134,37 @@ for index in stride(from: 0, through: names.count - 1, by: 1) {
 */
 ```
 
-## Partition 
+## Reordering an Array's elements  
+
+#### `swapAt(Int, Int)`
+
+```swift 
+var priorityList = ["Applying to jobs", "DSA", "Learning Advance Topics", "Independent Project", "Networking"]
+
+priorityList.swapAt(0, priorityList.count - 1)
+
+print(priorityList) // ["Networking", "DSA", "Learning Advance Topics", "Independent Project", "Applying to jobs"]
+```
+
+#### `shuffle()`
+
+```swift 
+var lunchOptions = ["salad", "pasta", "tacos", "fish and chips", "veggie burger"]
+
+lunchOptions.shuffle() // shuffles array in-place
+
+print(lunchOptions) // ["salad", "pasta", "veggie burger", "fish and chips", "tacos"]
+```
+
+#### `sort()`
+
+```swift 
+lunchOptions.sort() // sorts in-place
+
+print(lunchOptions) // ["fish and chips", "pasta", "salad", "tacos", "veggie burger"]
+```
+
+#### `partition(by: (Element) -> Bool) -> Int` 
 
 ```swift 
 var ages = [7, 1, 34, 2, 23, 2, 4, 90, 34, 10]
@@ -214,10 +327,16 @@ for i in 0..<ticTacToe.count {
 
 #### Challenge 1
 
+Constraints: do the problem below withou using built-in `reverse()`
+
 [HackerRank - Reverse Array](https://www.hackerrank.com/challenges/arrays-ds/problem)
 
 #### Challenge 2 
 
 [HackerRank - Hour Glass](https://www.hackerrank.com/challenges/2d-array/problem)
+
+## Resources 
+
+1. [Apple documentation - Array](https://developer.apple.com/documentation/swift/array)
 
 
